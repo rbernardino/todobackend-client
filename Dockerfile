@@ -10,7 +10,7 @@ ENV TERM=xterm-256color
 # Install node.js
 RUN apt-get update && \
     apt-get install curl git -y && \
-    curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
+    curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs 
 
 ADD . /app
